@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTEC - Universidade de Tecnologia e Engenharia</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">
+                UTEC
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">Cursos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Áreas de Ensino
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <!-- Computação -->
+                            <li class="dropdown-submenu">
+                                <span class="dropdown-item submenu-toggle">
+                                    Computação ›
+                                </span>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#engenharia-computacao">
+                                            Engenharia da Computação
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#ciencia-computacao">
+                                            Ciência da Computação
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#engenharia-software">
+                                            Engenharia de Software
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Engenharias -->
+                            <li class="dropdown-submenu">
+                                <span class="dropdown-item submenu-toggle">
+                                    Engenharias ›
+                                </span>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#engenharia-mecatronica">
+                                            Engenharia Mecatrônica
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#engenharia-eletrica">
+                                            Engenharia Elétrica
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Inteligência Artificial -->
+                            <li>
+                                <a class="dropdown-item" href="#inteligencia-artificial">
+                                    Inteligência Artificial
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noticias">Notícias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="inicio" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="fw-bold text-danger">
+                        UNIVERSIDADE DE TECNOLOGIA E ENGENHARIA
+                    </p>
+                    <h1 class="display-4 fw-bold">
+                        Construa o futuro com a UTEC.
+                    </h1>
+                    <p class="lead">
+                        Conhecimento, inovação e prática unidos para formar
+                        profissionais preparados para transformar o mundo
+                        por meio da tecnologia.
+                    </p>
+                    <a href="#cursos" class="btn btn-danger btn-lg">
+                        Conheça nossos cursos
+                    </a>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img
+                        src="img/hero-utec.png"
+                        class="img-fluid rounded"
+                        alt="Estudantes da UTEC trabalhando em um projeto de robótica">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="cursos" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">
+                    Nossos Cursos
+                </h2>
+                <p class="text-secondary">
+                    Prepare-se para construir as tecnologias do futuro.
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- Engenharia da Computação -->
+                <div class="col-md-6 col-lg-4" id="engenharia-computacao">
+                    <div class="card h-100">
+                        <img
+                            src="img/engenharia-computacao.png"
+                            class="card-img-top"
+                            alt="Engenharia da Computação">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                Engenharia da Computação
+                            </h5>
+                            <p class="card-text">
+                                Desenvolvimento de sistemas computacionais
+                                integrando hardware, software e eletrônica.
+                            </p>
+                            <button
+                                type="button"
+                                class="btn btn-outline-danger mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalComputacao">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ciência da Computação -->
+                <div class="col-md-6 col-lg-4" id="ciencia-computacao">
+                    <div class="card h-100">
+                        <img
+                            src="img/ciencia-computacao.png"
+                            class="card-img-top"
+                            alt="Ciência da Computação">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                Ciência da Computação
+                            </h5>
+                            <p class="card-text">
+                                Formação focada em programação, algoritmos, sistemas
+                                e desenvolvimento de soluções computacionais.
+                            </p>
+                            <button
+                                type="button"
+                                class="btn btn-outline-danger mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalCiencia">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Engenharia de Software -->
+                <div class="col-md-6 col-lg-4" id="engenharia-software">
+                    <div class="card h-100">
+                        <img
+                            src="img/engenharia-software.png"
+                            class="card-img-top"
+                            alt="Engenharia de Software">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                Engenharia de Software
+                            </h5>
+                            <p class="card-text">
+                                Desenvolvimento profissional de softwares,
+                                aplicações e sistemas digitais.
+                            </p>
+                            <button
+                                type="button"
+                                class="btn btn-outline-danger mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalSoftware">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inteligência Artificial -->
+                <div class="col-md-6 col-lg-4" id="inteligencia-artificial">
+                    <div class="card h-100">
+                        <img
+                            src="img/inteligencia-artificial.png"
+                            class="card-img-top"
+                            alt="Inteligência Artificial">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                Inteligência Artificial
+                            </h5>
+                            <p class="card-text">
+                                Desenvolvimento de sistemas inteligentes utilizando
+                                aprendizado de máquina e análise de dados.
+                            </p>
+                            <button
+                                type="button"
+                                class="btn btn-outline-danger mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalIA">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Engenharia Mecatrônica -->
+                <div class="col-md-6 col-lg-4" id="engenharia-mecatronica">
+                    <div class="card h-100">
+                        <img
+                            src="img/engenharia-mecatronica.png"
+                            class="card-img-top"
+                            alt="Engenharia Mecatrônica">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                Engenharia Mecatrônica
+                            </h5>
+                            <p class="card-text">
+                                Integração entre mecânica, eletrônica,
+                                automação e sistemas computacionais.
+                            </p>
+                            <button
+                                type="button"
+                                class="btn btn-outline-danger mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalMecatronica">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Engenharia Elétrica -->
+                <div class="col-md-6 col-lg-4" id="engenharia-eletrica">
+                    <div class="card h-100">
+                        <img
+                            src="img/engenharia-eletrica.png"
+                            class="card-img-top"
+                            alt="Engenharia Elétrica">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                Engenharia Elétrica
+                            </h5>
+                            <p class="card-text">
+                                Formação voltada para sistemas elétricos,
+                                eletrônicos, energia e automação.
+                            </p>
+                            <button
+                                type="button"
+                                class="btn btn-outline-danger mt-auto"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalEletrica">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-lg-3">
+                    <p class="mb-2">
+                        Alunos formados
+                    </p>
+                    <h2 class="fw-bold text-danger mb-0">
+                        12.000+
+                    </h2>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <p class="mb-2">
+                        Cursos oferecidos
+                    </p>
+                    <h2 class="fw-bold text-danger mb-0">
+                        18
+                    </h2>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <p class="mb-2">
+                        Professores
+                    </p>
+                    <h2 class="fw-bold text-danger mb-0">
+                        180+
+                    </h2>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <p class="mb-2">
+                        Satisfação dos alunos
+                    </p>
+                    <h2 class="fw-bold text-danger mb-0">
+                        94%
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="noticias" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">
+                    Últimas Notícias
+                </h2>
+                <p class="text-secondary">
+                    Acompanhe as novidades da UTEC.
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- Notícia 1 -->
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img
+                            src="img/noticia1.png"
+                            class="card-img-top"
+                            alt="Inauguração do laboratório de Inteligência Artificial da UTEC">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                UTEC inaugura novo laboratório de Inteligência Artificial
+                            </h5>
+                            <p class="card-text">
+                                Novo espaço amplia a infraestrutura de pesquisa,
+                                desenvolvimento e aprendizado de máquina da universidade.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Notícia 2 -->
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img
+                            src="img/noticia2.png"
+                            class="card-img-top"
+                            alt="Equipe de Mecatrônica da UTEC vence competição nacional">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Equipe de Mecatrônica vence competição nacional
+                            </h5>
+                            <p class="card-text">
+                                Estudantes da UTEC conquistaram o primeiro lugar
+                                com um projeto de automação inteligente.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Notícia 3 -->
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <img
+                            src="img/noticia3.png"
+                            class="card-img-top"
+                            alt="Vestibular UTEC 2027 com inscrições abertas">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Vestibular UTEC 2027 está com inscrições abertas
+                            </h5>
+                            <p class="card-text">
+                                Candidatos já podem se inscrever para os cursos
+                                de tecnologia e engenharia da universidade.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">
+                    Consulte nossos cursos
+                </h2>
+                <p class="text-secondary">
+                    Confira as principais informações sobre os cursos da UTEC.
+                </p>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Curso</th>
+                            <th>Modalidade</th>
+                            <th>Carga horária</th>
+                            <th>Investimento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Engenharia da Computação</td>
+                            <td>Presencial</td>
+                            <td>3.600 h</td>
+                            <td>R$ 1.590/mês</td>
+                        </tr>
+                        <tr>
+                            <td>Ciência da Computação</td>
+                            <td>Presencial</td>
+                            <td>3.200 h</td>
+                            <td>R$ 1.390/mês</td>
+                        </tr>
+                        <tr>
+                            <td>Engenharia de Software</td>
+                            <td>Presencial</td>
+                            <td>3.200 h</td>
+                            <td>R$ 1.390/mês</td>
+                        </tr>
+                        <tr>
+                            <td>Inteligência Artificial</td>
+                            <td>Presencial</td>
+                            <td>3.000 h</td>
+                            <td>R$ 1.490/mês</td>
+                        </tr>
+                        <tr>
+                            <td>Engenharia Mecatrônica</td>
+                            <td>Presencial</td>
+                            <td>3.800 h</td>
+                            <td>R$ 1.690/mês</td>
+                        </tr>
+                        <tr>
+                            <td>Engenharia Elétrica</td>
+                            <td>Presencial</td>
+                            <td>3.800 h</td>
+                            <td>R$ 1.590/mês</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">
+                    Entre em contato
+                </h2>
+                <p class="text-secondary">
+                    Ficou com alguma dúvida? Fale com a equipe da UTEC.
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nome" class="form-label">
+                                    Nome
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="nome"
+                                    required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">
+                                    E-mail
+                                </label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="telefone" class="form-label">
+                                    Telefone
+                                </label>
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="telefone"
+                                    placeholder="(XX) XXXXX-XXXX"
+                                    maxlength="15"
+                                    required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="curso" class="form-label">
+                                    Curso de interesse
+                                </label>
+                                <select
+                                    class="form-select"
+                                    id="curso"
+                                    required>
+                                    <option value="">
+                                        Selecione um curso
+                                    </option>
+                                    <option>
+                                        Engenharia da Computação
+                                    </option>
+                                    <option>
+                                        Ciência da Computação
+                                    </option>
+                                    <option>
+                                        Engenharia de Software
+                                    </option>
+                                    <option>
+                                        Inteligência Artificial
+                                    </option>
+                                    <option>
+                                        Engenharia Mecatrônica
+                                    </option>
+                                    <option>
+                                        Engenharia Elétrica
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="mensagem" class="form-label">
+                                    Mensagem
+                                </label>
+                                <textarea
+                                    class="form-control"
+                                    id="mensagem"
+                                    rows="5"
+                                    required>
+                                </textarea>
+                            </div>
+                            <div class="col-12">
+                                <button
+                                    type="submit"
+                                    class="btn btn-danger w-100">
+                                    Enviar mensagem
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Universidade -->
+                <div class="col-md-4">
+                    <h4 class="fw-bold text-danger">
+                        UTEC
+                    </h4>
+                    <p class="mb-1">
+                        Universidade de Tecnologia e Engenharia
+                    </p>
+                    <p class="text-secondary">
+                        Tecnologia que transforma o futuro.
+                    </p>
+                </div>
+                <!-- Contato -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">
+                        Contato
+                    </h5>
+                    <p class="mb-1">
+                        Av. Costábile Romano, 2201
+                    </p>
+                    <p class="mb-1">
+                        Ribeirão Preto - SP
+                    </p>
+                    <p class="mb-1">
+                        (16) 3603-7000
+                    </p>
+                    <p>
+                        contato@utec.edu.br
+                    </p>
+                </div>
+                <!-- Redes sociais -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">
+                        Redes sociais
+                    </h5>
+                    <p class="mb-1">
+                        Instagram
+                    </p>
+                    <p class="mb-1">
+                        LinkedIn
+                    </p>
+                    <p>
+                        YouTube
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="text-center text-secondary mb-0">
+                © 2026 UTEC - Universidade de Tecnologia e Engenharia.
+                Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+    <!-- Modal - Engenharia da Computação -->
+    <div class="modal fade" id="modalComputacao" tabindex="-1" aria-labelledby="tituloModalComputacao" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModalComputacao">
+                        Engenharia da Computação
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Descrição:</strong>
+                        Desenvolvimento de sistemas computacionais integrando hardware, software e eletrônica.
+                    </p>
+                    <p>
+                        <strong>Objetivo:</strong>
+                        Formar profissionais capazes de projetar e desenvolver sistemas computacionais,
+                        equipamentos eletrônicos e soluções tecnológicas.
+                    </p>
+                    <p>
+                        <strong>Carga horária:</strong>
+                        3.600 horas
+                    </p>
+                    <p>
+                        <strong>Público-alvo:</strong>
+                        Pessoas interessadas em computação, programação, eletrônica, automação e
+                        desenvolvimento tecnológico.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Ciência da Computação -->
+    <div class="modal fade" id="modalCiencia" tabindex="-1" aria-labelledby="tituloModalCiencia" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModalCiencia">
+                        Ciência da Computação
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Descrição:</strong>
+                        Formação focada em programação, algoritmos, sistemas e desenvolvimento de soluções computacionais.
+                    </p>
+                    <p>
+                        <strong>Objetivo:</strong>
+                        Preparar profissionais para desenvolver softwares, algoritmos e sistemas computacionais
+                        utilizando fundamentos sólidos de computação.
+                    </p>
+                    <p>
+                        <strong>Carga horária:</strong>
+                        3.200 horas
+                    </p>
+                    <p>
+                        <strong>Público-alvo:</strong>
+                        Interessados em programação, tecnologia, matemática e resolução de problemas.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Engenharia de Software -->
+    <div class="modal fade" id="modalSoftware" tabindex="-1" aria-labelledby="tituloModalSoftware" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModalSoftware">
+                        Engenharia de Software
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Descrição:</strong>
+                        Desenvolvimento profissional de softwares, aplicações e sistemas digitais.
+                    </p>
+                    <p>
+                        <strong>Objetivo:</strong>
+                        Formar profissionais capazes de projetar, desenvolver, testar e gerenciar sistemas de software de alta qualidade.
+                    </p>
+                    <p>
+                        <strong>Carga horária:</strong>
+                        3.200 horas
+                    </p>
+                    <p>
+                        <strong>Público-alvo:</strong>
+                        Pessoas interessadas em programação, desenvolvimento de aplicações e criação de produtos digitais.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Inteligência Artificial -->
+    <div class="modal fade" id="modalIA" tabindex="-1" aria-labelledby="tituloModalIA" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModalIA">
+                        Inteligência Artificial
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Descrição:</strong>
+                        Desenvolvimento de sistemas inteligentes utilizando aprendizado de máquina e análise de dados.
+                    </p>
+                    <p>
+                        <strong>Objetivo:</strong>
+                        Preparar profissionais para desenvolver soluções baseadas em inteligência artificial,
+                        aprendizado de máquina e automação inteligente.
+                    </p>
+                    <p>
+                        <strong>Carga horária:</strong>
+                        3.000 horas
+                    </p>
+                    <p>
+                        <strong>Público-alvo:</strong>
+                        Interessados em programação, matemática, dados e novas tecnologias.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Engenharia Mecatrônica -->
+    <div class="modal fade" id="modalMecatronica" tabindex="-1" aria-labelledby="tituloModalMecatronica" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModalMecatronica">
+                        Engenharia Mecatrônica
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Descrição:</strong>
+                        Integração entre mecânica, eletrônica, automação e sistemas computacionais.
+                    </p>
+                    <p>
+                        <strong>Objetivo:</strong>
+                        Formar engenheiros capazes de projetar e desenvolver sistemas automatizados,
+                        robôs e equipamentos inteligentes.
+                    </p>
+                    <p>
+                        <strong>Carga horária:</strong>
+                        3.800 horas
+                    </p>
+                    <p>
+                        <strong>Público-alvo:</strong>
+                        Pessoas interessadas em robótica, máquinas, eletrônica, programação e automação industrial.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Engenharia Elétrica -->
+    <div class="modal fade" id="modalEletrica" tabindex="-1" aria-labelledby="tituloModalEletrica" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModalEletrica">
+                        Engenharia Elétrica
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>Descrição:</strong>
+                        Formação voltada para sistemas elétricos, eletrônicos, energia e automação.
+                    </p>
+                    <p>
+                        <strong>Objetivo:</strong>
+                        Formar profissionais preparados para desenvolver e gerenciar sistemas elétricos,
+                        eletrônicos e energéticos.
+                    </p>
+                    <p>
+                        <strong>Carga horária:</strong>
+                        3.800 horas
+                    </p>
+                    <p>
+                        <strong>Público-alvo:</strong>
+                        Interessados em eletrônica, energia, automação, matemática e engenharia.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
